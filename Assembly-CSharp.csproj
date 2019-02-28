@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{E13132F1-6D27-8BB2-BE32-4198C0643A19}</ProjectGuid>
+    <ProjectGuid>{0B91D159-9832-965E-EE83-4CD6FA232913}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,22 +61,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LookScript.cs" />
-    <Compile Include="Assets\MouseOrbitImproved.cs" />
-    <Compile Include="Assets\PlayerScript.cs" />
-    <Compile Include="Assets\ShootScript.cs" />
-    <Compile Include="Assets\SyncTransform.cs" />
+    <Compile Include="Assets\3DNetCode\LookScript.cs" />
+    <Compile Include="Assets\3DNetCode\MouseOrbitImproved.cs" />
+    <Compile Include="Assets\3DNetCode\PlayerScript.cs" />
+    <Compile Include="Assets\3DNetCode\ShootScript.cs" />
+    <Compile Include="Assets\3DNetCode\SyncTransform.cs" />
+    <Compile Include="Assets\Minesweeper3D\Scripts\Grid.cs" />
+    <Compile Include="Assets\Minesweeper3D\Scripts\RotateToCamera.cs" />
+    <Compile Include="Assets\Minesweeper3D\Scripts\Tile.cs" />
+    <Compile Include="Assets\MinesweeperClassic\Scripts\Grid.cs" />
+    <Compile Include="Assets\MinesweeperClassic\Scripts\Tile.cs" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/teacher/Documents/unityprojects/NetworkingTutorial/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/teacher/Documents/GitHub/Advanced-Programming/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/teacher/Documents/unityprojects/NetworkingTutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/teacher/Documents/GitHub/Advanced-Programming/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/teacher/Documents/unityprojects/NetworkingTutorial/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/teacher/Documents/GitHub/Advanced-Programming/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/teacher/Documents/unityprojects/NetworkingTutorial/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/teacher/Documents/GitHub/Advanced-Programming/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
