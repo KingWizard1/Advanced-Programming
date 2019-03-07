@@ -18,14 +18,14 @@ public class ShootScript : NetworkBehaviour {
     /// <summary>Timer for the fireRate.</summary>
     private float fireFactor = 0f;
     /// <summary>Reference to the camera child.</summary>
-    private Camera camera;
+    private new Camera camera;
 
     // ----------------------------------------------------- //
 
     void Start () {
 
         camera = GetComponentInChildren<Camera>();
-
+        
 	}
 
     // ----------------------------------------------------- //
