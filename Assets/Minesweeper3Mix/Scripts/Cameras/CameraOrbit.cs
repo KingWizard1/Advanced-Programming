@@ -53,7 +53,7 @@ namespace Checkers
         {
             
             // Is the right mouse button pressed?
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButton(2))
             {
                 // Hide the cursor
                 Cursor.visible = false;

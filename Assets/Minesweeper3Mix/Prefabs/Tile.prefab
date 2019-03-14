@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4532114892277682}
   - component: {fileID: 33560897947972386}
   - component: {fileID: 23766754051749364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114724764893039744}
   - component: {fileID: 65252641121418382}
   - component: {fileID: 95034015409601814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1420798839066584}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -161,6 +161,7 @@ MonoBehaviour:
   z: 0
   isMine: 0
   isRevealed: 0
+  flagColor: {r: 1, g: 0.6170729, b: 0.21226418, a: 1}
   minePrefab: {fileID: 1342747846023300, guid: b8b77279c36c1c945a8b51aa37b36987, type: 2}
   textPrefab: {fileID: 1938260811523964, guid: a67ace535236c864eb035049571b2944, type: 2}
   textGradient:
@@ -192,4 +193,5 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 4
     m_NumAlphaKeys: 2
-  mineChance: 0.15
+  mineChance: 0.077
+  rend: {fileID: 23766754051749364}

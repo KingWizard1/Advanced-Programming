@@ -16,12 +16,19 @@ namespace Minesweeper3Mix
 
         public bool isRevealed = false;
 
+        public bool isFlagged = false;
+
+        public Color flagColor;
+        private Color originalColor;
+
         public GameObject minePrefab, textPrefab;
 
         public Gradient textGradient;
 
         [Range(0, 1)]
         public float mineChance = 0.15f;
+
+        public Renderer rend;
 
         // ----------------------------------------------------- //
 
@@ -37,6 +44,7 @@ namespace Minesweeper3Mix
 
             anim = GetComponent<Animator>();
             col = GetComponent<Collider>();
+            //rend = GetComponent<Renderer>();
 
         }
 
@@ -63,6 +71,9 @@ namespace Minesweeper3Mix
 
         private void Start()
         {
+            // Remember original color
+            originalColor = rend.material.color;
+
             // Set whether or not we hold a mine
             isMine = Random.value < mineChance;
 
@@ -85,10 +96,10 @@ namespace Minesweeper3Mix
 
         // ----------------------------------------------------- //
 
-        private void OnMouseDown()
-        {
-            Reveal(Random.Range(1, 9));
-        }
+        //private void OnMouseDown()
+        //{
+        //    Reveal(Random.Range(1, 9));
+        //}
 
         // ----------------------------------------------------- //
 
@@ -126,6 +137,14 @@ namespace Minesweeper3Mix
         }
 
         // ----------------------------------------------------- //
+
+        public void Flag()
+        {
+            // Toggle flagged
+            isFlagged = !isFlagged;
+            // Change the material
+            rend.material.color = isFlagged ? flagColor : originalColor;
+        }
 
         // ----------------------------------------------------- //
 
